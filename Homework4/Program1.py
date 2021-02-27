@@ -3,4 +3,4 @@ def temp_converter(Tf):
     return Tc
 
 Tf = float(input('Enter temperature in Fahrenheit :')) 
-print(temp_converter(Tf)) 
+print(temp_converter(Tf))

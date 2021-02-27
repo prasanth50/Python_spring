@@ -4,7 +4,7 @@ long_url = input('Enter the url to shorten:')
 def url_shortner(newurl):
 
     result = hashlib.md5(newurl.encode())
-    x = result.hexdigest()
+    x = result.hepdigest()
     z = list(x)
     return "".join(z[:7])
 
@@ -22,7 +22,7 @@ def get_original_url(m,n):
     else:
         return "404 not found"
 
-print(get_original_url(shorten_url,long_url))            
+print(get_original_url(url_shortner,long_url))            
 
 ''' In this program I used Pyshortners module to make the given URL short
 Pros: It is easy and convenient as we are using a module that has all the pre-defined functions enclosed in it.
